@@ -1,4 +1,4 @@
-﻿[CmdletBinding(DefaultParameterSetName = 'None')]
+[CmdletBinding(DefaultParameterSetName = 'None')]
 param
 (
 	[String] [Parameter(Mandatory = $true)] $ruleSet,
@@ -78,13 +78,13 @@ $xslFileTemplate = resolveXSLFileTemplate
 
 #Compile files to run analysis
 $fileList.Split(",") | foreach {
-    Write-Host "Include file: $buildDirectory.Trim()\$_.Trim()"
+    Write-Host "Include file: $buildDirectory\$_"
 
-	$chkdll = CheckFileDirectory -path $buildDirectory.Trim()\$_.Trim()
+	$chkdll = CheckFileDirectory -path $buildDirectory\$_
 
 	if ($chkdll)
 	{
-		$dll = "/file:$buildDirectory.Trim()\$_.Trim() "
+		$dll = "/file:$buildDirectory\"
 		$allArgs += $dll 
 	}
 }
