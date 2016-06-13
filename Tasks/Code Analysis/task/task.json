@@ -30,7 +30,7 @@
       "name": "ruleset",
       "type": "pickList",
       "label": "Rules To Run",
-      "defaultValue": "All Rules",
+      "defaultValue": "AllRules",
       "required": true,
       "helpMarkDown": "Comma-Delimited List of Rule sets to run.",
       "options": { 
