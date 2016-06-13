@@ -3,7 +3,7 @@
   "name": "CodeAnalysis",
   "friendlyName": "Code Analysis",
   "description": "Perform Code Analysis on your Solution/Projects",
-  "helpMarkDown": "[More Information](https://github.com/TotalALM/VSO-Tasks/blob/master/VSO%20Tasks/Code%20Analysis/README.md)",
+  "helpMarkDown": "[More Information](https://github.com/TotalALM/VSTS-Tasks/blob/master/Tasks/Code%20Analysis/README.md)",
   "category": "Utility",
   "visibility": [
                 "Release",
@@ -13,7 +13,7 @@
   "version": {
     "Major": 1,
     "Minor": 11,
-    "Patch": 0
+    "Patch": 1
   },
   "demands": [
   ],
